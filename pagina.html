@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina formulario</title>
+    <style>
+        body {
+            background-color: #0b0b0b;
+        }
+
+        .logor {
+            width: 50px;
+
+        }
+
+        .logoc {
+
+            width: 44px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid darkslategray;
+        }
+
+        li {
+            display: inline;
+        }
+
+        h1,
+        p,
+        label {
+            color: white;
+            text-align: center;
+        }
+
+        .area {
+            width: 4%;
+        }
+
+        div {
+            padding: 7px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #preferencias {
+            display: flex;
+            justify-content: center;
+        }
+
+        input,select {
+            height: 40px;
+            background-color: #f5f5dc00;
+            border: 1px solid blueviolet;
+            border-radius: 15px;
+
+
+            padding: 5px;
+            font-size: 1.4em;
+            font-weight: 800;
+            color: #ebc9ff;
+            margin: 10px;
+        }
+        #enviar{
+            height: 40px;
+            background-color: #f5f5dc00;
+            border: 1px solid b;
+            border-radius: 15px;
+
+
+            padding: 5px;
+            font-size: 1.4em;
+            font-weight: 800;
+            color: #ebc9ff;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="assets/menu(2).png" class="logoc">
+        </div>
+        <div>
+            <img src="assets/logor.png" class="logor">
+        </div>
+        <div>
+            <img src="https://media-rockstargames-com.akamaized.net/mfe5/__common/img/61ed3b631437f6495d9c.svg"
+                id="logoc">
+        </div>
+
+
+
+    </header>
+    <h1>Contact Us</h1>
+    <form action="" method="">
+        <p><strong>Sus datos de contacto</strong></p>
+        <div>
+            <label for="nombre"></label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+        </div>
+        <div>
+            <input type="email" name="mail" id="mail" placeholder="Correo Electronico">
+            <input type="text" name="dni" id="dni" placeholder="DNI">
+        </div>
+        <div>
+            <input type="number" name="area" id="area" placeholder="Area" class="area">
+            <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+        </div>
+    </form>
+    <p><strong>Gracias!,ahora ingrese sus preferencias</strong></p>
+    <form action="preferencias" method="post">
+        <p>Juego que juegas actualmente</p>
+        <div>
+            <label for="preferencias"></label>
+            <select id="preferencias" name="preferencias" required>
+                <option value="">Selecciona una opción</option>
+                <option value="estudiante">Grand Theft Auto 5</option>
+                <option value="profesor">Read and redemption 2</option>
+                <option value="trabajador">Bully</option>
+                <option value="trabajador">Max Payne</option>
+                <label for="otros"></label>
+                <input type="number" name="nombre" id="otros" placeholder="Puntuacion al juego(1-10)" min="1"
+                    max="10">
+        </div>
+        <p>¿Has tenido algun tipo de problema con tu juego?:</p>
+        <div>
+            <label for="otros"></label>
+            <select id="otros" name="otros" required>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+        </div>
+    </form>
+    <form action="" method="post">
+        <p><strong>Sus datos de contacto</strong></p>
+        <div>
+            <label for="Problema"></label>
+            <input type="text" name="Problema" id="Problema" placeholder="¿Que problema tuvo?">
+        </div>
+        <div>
+            <input type="submit" value="Enviar" class="enviar">
+        </div>
+    </form>
+
+    <main>
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

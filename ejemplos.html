@@ -1,0 +1,8 @@
+<form action="/encuesta" method="post">
+    <label for="ocupacion">Ocupación:</label> <!-- el valor de for es el ID del select-->
+    <select id="ocupacion" name="ocupacion" required> <!-- selector de opciones -->
+        <option value="">Selecciona una opción</option> <!-- no hay valor en el atributo value -->
+        <option value="estudiante">Estudiante</option> <!-- aquí si hay valor en value, es lo que se manda al servidor: estudiante-->
+        <option value="profesor">Profesor</option> <!-- valor enviado profesor-->
+        <option value="trabajador">Trabajador</option> <!-- valor enviado trabajador -->
+    </select>
